@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41051AB12BE34E8D00EF90A6 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB02BE34E8D00EF90A6 /* AskView.swift */; };
+		41051AB32BE34EB900EF90A6 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB22BE34EB900EF90A6 /* DataView.swift */; };
+		41051AB52BE34EC800EF90A6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB42BE34EC800EF90A6 /* ProfileView.swift */; };
+		410B196E2BE2FCCE003A1F87 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B196D2BE2FCCE003A1F87 /* LoginView.swift */; };
+		410B19702BE32CE5003A1F87 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B196F2BE32CE5003A1F87 /* SignupView.swift */; };
+		410B19722BE338F7003A1F87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B19712BE338F7003A1F87 /* MainView.swift */; };
+		41939E722BD0707D005D0EA4 /* EMERAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E712BD0707D005D0EA4 /* EMERAIApp.swift */; };
+		41939E742BD0707D005D0EA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E732BD0707D005D0EA4 /* ContentView.swift */; };
+		41939E762BD0707F005D0EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41939E752BD0707F005D0EA4 /* Assets.xcassets */; };
+		41939E792BD0707F005D0EA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41939E782BD0707F005D0EA4 /* Preview Assets.xcassets */; };
+		41939E832BD0707F005D0EA4 /* EMERAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E822BD0707F005D0EA4 /* EMERAITests.swift */; };
+		41939E8D2BD0707F005D0EA4 /* EMERAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E8C2BD0707F005D0EA4 /* EMERAIUITests.swift */; };
+		41939E8F2BD0707F005D0EA4 /* EMERAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E8E2BD0707F005D0EA4 /* EMERAIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41939E7F2BD0707F005D0EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41939E662BD0707D005D0EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41939E6D2BD0707D005D0EA4;
+			remoteInfo = EMERAI;
+		};
+		41939E892BD0707F005D0EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41939E662BD0707D005D0EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41939E6D2BD0707D005D0EA4;
+			remoteInfo = EMERAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41051AB02BE34E8D00EF90A6 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskView.swift; sourceTree = "<group>"; };
+		41051AB22BE34EB900EF90A6 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		41051AB42BE34EC800EF90A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		410B196D2BE2FCCE003A1F87 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		410B196F2BE32CE5003A1F87 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		410B19712BE338F7003A1F87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		41939E6E2BD0707D005D0EA4 /* EMERAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMERAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41939E712BD0707D005D0EA4 /* EMERAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMERAIApp.swift; sourceTree = "<group>"; };
+		41939E732BD0707D005D0EA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41939E752BD0707F005D0EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41939E782BD0707F005D0EA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41939E7E2BD0707F005D0EA4 /* EMERAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMERAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41939E822BD0707F005D0EA4 /* EMERAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMERAITests.swift; sourceTree = "<group>"; };
+		41939E882BD0707F005D0EA4 /* EMERAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMERAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41939E8C2BD0707F005D0EA4 /* EMERAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMERAIUITests.swift; sourceTree = "<group>"; };
+		41939E8E2BD0707F005D0EA4 /* EMERAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMERAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41939E6B2BD0707D005D0EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E7B2BD0707F005D0EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E852BD0707F005D0EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410B19662BE2F82B003A1F87 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41939E712BD0707D005D0EA4 /* EMERAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		410B19672BE2F835003A1F87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		410B19682BE2F83D003A1F87 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		410B19692BE2F845003A1F87 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				410B196C2BE2F8C5003A1F87 /* Authentication */,
+				410B196B2BE2F8BF003A1F87 /* Function */,
+				410B196A2BE2F886003A1F87 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		410B196A2BE2F886003A1F87 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				41939E732BD0707D005D0EA4 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		410B196B2BE2F8BF003A1F87 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				41051AB02BE34E8D00EF90A6 /* AskView.swift */,
+				410B19712BE338F7003A1F87 /* MainView.swift */,
+				41051AB22BE34EB900EF90A6 /* DataView.swift */,
+				41051AB42BE34EC800EF90A6 /* ProfileView.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		410B196C2BE2F8C5003A1F87 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				410B196D2BE2FCCE003A1F87 /* LoginView.swift */,
+				410B196F2BE32CE5003A1F87 /* SignupView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		41939E652BD0707D005D0EA4 = {
+			isa = PBXGroup;
+			children = (
+				41939E702BD0707D005D0EA4 /* EMERAI */,
+				41939E812BD0707F005D0EA4 /* EMERAITests */,
+				41939E8B2BD0707F005D0EA4 /* EMERAIUITests */,
+				41939E6F2BD0707D005D0EA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41939E6F2BD0707D005D0EA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41939E6E2BD0707D005D0EA4 /* EMERAI.app */,
+				41939E7E2BD0707F005D0EA4 /* EMERAITests.xctest */,
+				41939E882BD0707F005D0EA4 /* EMERAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41939E702BD0707D005D0EA4 /* EMERAI */ = {
+			isa = PBXGroup;
+			children = (
+				410B19692BE2F845003A1F87 /* Core */,
+				410B19682BE2F83D003A1F87 /* Component */,
+				410B19672BE2F835003A1F87 /* Model */,
+				410B19662BE2F82B003A1F87 /* App */,
+				41939E752BD0707F005D0EA4 /* Assets.xcassets */,
+				41939E772BD0707F005D0EA4 /* Preview Content */,
+			);
+			path = EMERAI;
+			sourceTree = "<group>";
+		};
+		41939E772BD0707F005D0EA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41939E782BD0707F005D0EA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41939E812BD0707F005D0EA4 /* EMERAITests */ = {
+			isa = PBXGroup;
+			children = (
+				41939E822BD0707F005D0EA4 /* EMERAITests.swift */,
+			);
+			path = EMERAITests;
+			sourceTree = "<group>";
+		};
+		41939E8B2BD0707F005D0EA4 /* EMERAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41939E8C2BD0707F005D0EA4 /* EMERAIUITests.swift */,
+				41939E8E2BD0707F005D0EA4 /* EMERAIUITestsLaunchTests.swift */,
+			);
+			path = EMERAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41939E6D2BD0707D005D0EA4 /* EMERAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41939E922BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAI" */;
+			buildPhases = (
+				41939E6A2BD0707D005D0EA4 /* Sources */,
+				41939E6B2BD0707D005D0EA4 /* Frameworks */,
+				41939E6C2BD0707D005D0EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMERAI;
+			productName = EMERAI;
+			productReference = 41939E6E2BD0707D005D0EA4 /* EMERAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41939E7D2BD0707F005D0EA4 /* EMERAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41939E952BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAITests" */;
+			buildPhases = (
+				41939E7A2BD0707F005D0EA4 /* Sources */,
+				41939E7B2BD0707F005D0EA4 /* Frameworks */,
+				41939E7C2BD0707F005D0EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41939E802BD0707F005D0EA4 /* PBXTargetDependency */,
+			);
+			name = EMERAITests;
+			productName = EMERAITests;
+			productReference = 41939E7E2BD0707F005D0EA4 /* EMERAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41939E872BD0707F005D0EA4 /* EMERAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41939E982BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAIUITests" */;
+			buildPhases = (
+				41939E842BD0707F005D0EA4 /* Sources */,
+				41939E852BD0707F005D0EA4 /* Frameworks */,
+				41939E862BD0707F005D0EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41939E8A2BD0707F005D0EA4 /* PBXTargetDependency */,
+			);
+			name = EMERAIUITests;
+			productName = EMERAIUITests;
+			productReference = 41939E882BD0707F005D0EA4 /* EMERAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41939E662BD0707D005D0EA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					41939E6D2BD0707D005D0EA4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					41939E7D2BD0707F005D0EA4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 41939E6D2BD0707D005D0EA4;
+					};
+					41939E872BD0707F005D0EA4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 41939E6D2BD0707D005D0EA4;
+					};
+				};
+			};
+			buildConfigurationList = 41939E692BD0707D005D0EA4 /* Build configuration list for PBXProject "EMERAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41939E652BD0707D005D0EA4;
+			productRefGroup = 41939E6F2BD0707D005D0EA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41939E6D2BD0707D005D0EA4 /* EMERAI */,
+				41939E7D2BD0707F005D0EA4 /* EMERAITests */,
+				41939E872BD0707F005D0EA4 /* EMERAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41939E6C2BD0707D005D0EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41939E792BD0707F005D0EA4 /* Preview Assets.xcassets in Resources */,
+				41939E762BD0707F005D0EA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E7C2BD0707F005D0EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E862BD0707F005D0EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41939E6A2BD0707D005D0EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41051AB52BE34EC800EF90A6 /* ProfileView.swift in Sources */,
+				41051AB12BE34E8D00EF90A6 /* AskView.swift in Sources */,
+				410B19702BE32CE5003A1F87 /* SignupView.swift in Sources */,
+				410B196E2BE2FCCE003A1F87 /* LoginView.swift in Sources */,
+				41051AB32BE34EB900EF90A6 /* DataView.swift in Sources */,
+				41939E742BD0707D005D0EA4 /* ContentView.swift in Sources */,
+				410B19722BE338F7003A1F87 /* MainView.swift in Sources */,
+				41939E722BD0707D005D0EA4 /* EMERAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E7A2BD0707F005D0EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41939E832BD0707F005D0EA4 /* EMERAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41939E842BD0707F005D0EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41939E8D2BD0707F005D0EA4 /* EMERAIUITests.swift in Sources */,
+				41939E8F2BD0707F005D0EA4 /* EMERAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41939E802BD0707F005D0EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41939E6D2BD0707D005D0EA4 /* EMERAI */;
+			targetProxy = 41939E7F2BD0707F005D0EA4 /* PBXContainerItemProxy */;
+		};
+		41939E8A2BD0707F005D0EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41939E6D2BD0707D005D0EA4 /* EMERAI */;
+			targetProxy = 41939E892BD0707F005D0EA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41939E902BD0707F005D0EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41939E912BD0707F005D0EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41939E932BD0707F005D0EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EMERAI/Preview Content\"";
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41939E942BD0707F005D0EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EMERAI/Preview Content\"";
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41939E962BD0707F005D0EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMERAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EMERAI";
+			};
+			name = Debug;
+		};
+		41939E972BD0707F005D0EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMERAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EMERAI";
+			};
+			name = Release;
+		};
+		41939E992BD0707F005D0EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EMERAI;
+			};
+			name = Debug;
+		};
+		41939E9A2BD0707F005D0EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8B285LWDY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.danpeng.EMERAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EMERAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41939E692BD0707D005D0EA4 /* Build configuration list for PBXProject "EMERAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41939E902BD0707F005D0EA4 /* Debug */,
+				41939E912BD0707F005D0EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41939E922BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41939E932BD0707F005D0EA4 /* Debug */,
+				41939E942BD0707F005D0EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41939E952BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41939E962BD0707F005D0EA4 /* Debug */,
+				41939E972BD0707F005D0EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41939E982BD0707F005D0EA4 /* Build configuration list for PBXNativeTarget "EMERAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41939E992BD0707F005D0EA4 /* Debug */,
+				41939E9A2BD0707F005D0EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41939E662BD0707D005D0EA4 /* Project object */;
+}
