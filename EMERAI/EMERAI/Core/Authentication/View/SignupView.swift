@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SignupView: View {
     @State private var email = ""
@@ -15,6 +16,7 @@ struct SignupView: View {
     @State private var passwordsMatch: Bool = true
     @State private var showingLoginScreen = false
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthViewModel
 
     var body: some View {
         NavigationView {
@@ -53,17 +55,37 @@ struct SignupView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    SecureField("Confirm Password", text: $confirmPassword)
-                                  .padding()
-                                  .frame(width: 300, height: 50)
-                                  .background(Color.black.opacity(0.05))
-                                  .cornerRadius(10)
-                                  .border(passwordsMatch ? Color.clear : Color.red, width: 2)
-                                  .onChange(of: confirmPassword) {
-                                    checkPasswordsMatch()
-                                  }
+                    ZStack(alignment: .trailing) {
+                        SecureField("Confirm Password", text: $confirmPassword)
+                                      .padding()
+                                      .frame(width: 300, height: 50)
+                                      .background(Color.black.opacity(0.05))
+                                      .cornerRadius(10)
+                                      .border(passwordsMatch ? Color.clear : Color.red, width: 2)
+                                      
+                        if !password.isEmpty && !confirmPassword.isEmpty {
+                            if password == confirmPassword {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .imageScale(.large)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(.systemGreen))
+                            } else {
+                                Image(systemName: "xmark.circle.fill")
+                                    .imageScale(.large)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(.systemRed))
+                            }
+                            
+                        }
+                    }
+                    
+                                    
+                                  
                     
                     Button("Sign Up"){
+                        Task {
+                            try await viewModel.createUser(withEmail: email, password: password, username: username)
+                        }
                         checkPasswordsMatch()
                     }
                     .foregroundColor(.white)
@@ -90,7 +112,7 @@ struct SignupView: View {
     
     private func checkPasswordsMatch() {
             passwordsMatch = password == confirmPassword
-        }
+   }
 }
 
 #Preview {

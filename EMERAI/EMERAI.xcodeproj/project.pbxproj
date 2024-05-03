@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		41051AB12BE34E8D00EF90A6 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB02BE34E8D00EF90A6 /* AskView.swift */; };
-		41051AB32BE34EB900EF90A6 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB22BE34EB900EF90A6 /* DataView.swift */; };
+		41051AB32BE34EB900EF90A6 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB22BE34EB900EF90A6 /* AppointmentView.swift */; };
 		41051AB52BE34EC800EF90A6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41051AB42BE34EC800EF90A6 /* ProfileView.swift */; };
 		410B196E2BE2FCCE003A1F87 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B196D2BE2FCCE003A1F87 /* LoginView.swift */; };
 		410B19702BE32CE5003A1F87 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B196F2BE32CE5003A1F87 /* SignupView.swift */; };
 		410B19722BE338F7003A1F87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B19712BE338F7003A1F87 /* MainView.swift */; };
+		417D29042BE40AB500482DB0 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D29032BE40AB500482DB0 /* SettingRowView.swift */; };
+		417D29062BE40DC100482DB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D29052BE40DC100482DB0 /* User.swift */; };
+		417D29082BE4140300482DB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417D29072BE4140300482DB0 /* GoogleService-Info.plist */; };
+		417D290B2BE414EC00482DB0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 417D290A2BE414EC00482DB0 /* FirebaseAnalytics */; };
+		417D290D2BE414EC00482DB0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 417D290C2BE414EC00482DB0 /* FirebaseAnalyticsOnDeviceConversion */; };
+		417D290F2BE414EC00482DB0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 417D290E2BE414EC00482DB0 /* FirebaseAnalyticsSwift */; };
+		417D29112BE414EC00482DB0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 417D29102BE414EC00482DB0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		417D29132BE414EC00482DB0 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 417D29122BE414EC00482DB0 /* FirebaseAppCheck */; };
+		417D29172BE4166100482DB0 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D29162BE4166100482DB0 /* AuthViewModel.swift */; };
+		417D291A2BE4245300482DB0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 417D29192BE4245300482DB0 /* FirebaseAuth */; };
+		417D291C2BE46A4900482DB0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 417D291B2BE46A4900482DB0 /* FirebaseFirestoreSwift */; };
+		417D291E2BE46A7700482DB0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 417D291D2BE46A7700482DB0 /* FirebaseFirestore */; };
+		417D29202BE48EF900482DB0 /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D291F2BE48EF900482DB0 /* AppointmentViewModel.swift */; };
+		417D29232BE496EC00482DB0 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 417D29222BE496EC00482DB0 /* GoogleGenerativeAI */; };
+		417D29252BE49A7800482DB0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D29242BE49A7800482DB0 /* APIKey.swift */; };
+		417D29282BE49B5B00482DB0 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417D29272BE49B5B00482DB0 /* GenerativeAI-Info.plist */; };
+		417D292A2BE4A0B100482DB0 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D29292BE4A0B100482DB0 /* ChatView.swift */; };
+		417D292C2BE4A0E300482DB0 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D292B2BE4A0E300482DB0 /* ChatViewModel.swift */; };
 		41939E722BD0707D005D0EA4 /* EMERAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E712BD0707D005D0EA4 /* EMERAIApp.swift */; };
 		41939E742BD0707D005D0EA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41939E732BD0707D005D0EA4 /* ContentView.swift */; };
 		41939E762BD0707F005D0EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41939E752BD0707F005D0EA4 /* Assets.xcassets */; };
@@ -41,11 +59,20 @@
 
 /* Begin PBXFileReference section */
 		41051AB02BE34E8D00EF90A6 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskView.swift; sourceTree = "<group>"; };
-		41051AB22BE34EB900EF90A6 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		41051AB22BE34EB900EF90A6 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
 		41051AB42BE34EC800EF90A6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		410B196D2BE2FCCE003A1F87 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		410B196F2BE32CE5003A1F87 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		410B19712BE338F7003A1F87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		417D29032BE40AB500482DB0 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		417D29052BE40DC100482DB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		417D29072BE4140300482DB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		417D29162BE4166100482DB0 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		417D291F2BE48EF900482DB0 /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		417D29242BE49A7800482DB0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		417D29272BE49B5B00482DB0 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GenerativeAI-Info.plist"; path = "../../../../generative-ai-swift/Examples/GenerativeAISample/APIKey/GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		417D29292BE4A0B100482DB0 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		417D292B2BE4A0E300482DB0 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		41939E6E2BD0707D005D0EA4 /* EMERAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMERAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41939E712BD0707D005D0EA4 /* EMERAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMERAIApp.swift; sourceTree = "<group>"; };
 		41939E732BD0707D005D0EA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +90,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417D290F2BE414EC00482DB0 /* FirebaseAnalyticsSwift in Frameworks */,
+				417D291A2BE4245300482DB0 /* FirebaseAuth in Frameworks */,
+				417D290B2BE414EC00482DB0 /* FirebaseAnalytics in Frameworks */,
+				417D291C2BE46A4900482DB0 /* FirebaseFirestoreSwift in Frameworks */,
+				417D290D2BE414EC00482DB0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				417D291E2BE46A7700482DB0 /* FirebaseFirestore in Frameworks */,
+				417D29232BE496EC00482DB0 /* GoogleGenerativeAI in Frameworks */,
+				417D29132BE414EC00482DB0 /* FirebaseAppCheck in Frameworks */,
+				417D29112BE414EC00482DB0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +130,7 @@
 		410B19672BE2F835003A1F87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				417D29052BE40DC100482DB0 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +138,7 @@
 		410B19682BE2F83D003A1F87 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				417D29032BE40AB500482DB0 /* SettingRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -109,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				410B196C2BE2F8C5003A1F87 /* Authentication */,
+				417D29152BE4162300482DB0 /* ViewModel */,
 				410B196B2BE2F8BF003A1F87 /* Function */,
 				410B196A2BE2F886003A1F87 /* Root */,
 			);
@@ -128,8 +167,9 @@
 			children = (
 				41051AB02BE34E8D00EF90A6 /* AskView.swift */,
 				410B19712BE338F7003A1F87 /* MainView.swift */,
-				41051AB22BE34EB900EF90A6 /* DataView.swift */,
+				41051AB22BE34EB900EF90A6 /* AppointmentView.swift */,
 				41051AB42BE34EC800EF90A6 /* ProfileView.swift */,
+				417D29292BE4A0B100482DB0 /* ChatView.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -137,10 +177,44 @@
 		410B196C2BE2F8C5003A1F87 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				410B196D2BE2FCCE003A1F87 /* LoginView.swift */,
-				410B196F2BE32CE5003A1F87 /* SignupView.swift */,
+				417D29142BE4161A00482DB0 /* View */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		417D29142BE4161A00482DB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				410B196F2BE32CE5003A1F87 /* SignupView.swift */,
+				410B196D2BE2FCCE003A1F87 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417D29152BE4162300482DB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				417D29162BE4166100482DB0 /* AuthViewModel.swift */,
+				417D291F2BE48EF900482DB0 /* AppointmentViewModel.swift */,
+				417D292B2BE4A0E300482DB0 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		417D29182BE4245300482DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		417D29262BE49B3F00482DB0 /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				417D29242BE49A7800482DB0 /* APIKey.swift */,
+				417D29272BE49B5B00482DB0 /* GenerativeAI-Info.plist */,
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 		41939E652BD0707D005D0EA4 = {
@@ -150,6 +224,7 @@
 				41939E812BD0707F005D0EA4 /* EMERAITests */,
 				41939E8B2BD0707F005D0EA4 /* EMERAIUITests */,
 				41939E6F2BD0707D005D0EA4 /* Products */,
+				417D29182BE4245300482DB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +241,8 @@
 		41939E702BD0707D005D0EA4 /* EMERAI */ = {
 			isa = PBXGroup;
 			children = (
+				417D29262BE49B3F00482DB0 /* APIKey */,
+				417D29072BE4140300482DB0 /* GoogleService-Info.plist */,
 				410B19692BE2F845003A1F87 /* Core */,
 				410B19682BE2F83D003A1F87 /* Component */,
 				410B19672BE2F835003A1F87 /* Model */,
@@ -217,6 +294,17 @@
 			dependencies = (
 			);
 			name = EMERAI;
+			packageProductDependencies = (
+				417D290A2BE414EC00482DB0 /* FirebaseAnalytics */,
+				417D290C2BE414EC00482DB0 /* FirebaseAnalyticsOnDeviceConversion */,
+				417D290E2BE414EC00482DB0 /* FirebaseAnalyticsSwift */,
+				417D29102BE414EC00482DB0 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				417D29122BE414EC00482DB0 /* FirebaseAppCheck */,
+				417D29192BE4245300482DB0 /* FirebaseAuth */,
+				417D291B2BE46A4900482DB0 /* FirebaseFirestoreSwift */,
+				417D291D2BE46A7700482DB0 /* FirebaseFirestore */,
+				417D29222BE496EC00482DB0 /* GoogleGenerativeAI */,
+			);
 			productName = EMERAI;
 			productReference = 41939E6E2BD0707D005D0EA4 /* EMERAI.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +377,10 @@
 				Base,
 			);
 			mainGroup = 41939E652BD0707D005D0EA4;
+			packageReferences = (
+				417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				417D29212BE496EC00482DB0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = 41939E6F2BD0707D005D0EA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,6 +399,8 @@
 			files = (
 				41939E792BD0707F005D0EA4 /* Preview Assets.xcassets in Resources */,
 				41939E762BD0707F005D0EA4 /* Assets.xcassets in Resources */,
+				417D29282BE49B5B00482DB0 /* GenerativeAI-Info.plist in Resources */,
+				417D29082BE4140300482DB0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,10 +429,17 @@
 				41051AB12BE34E8D00EF90A6 /* AskView.swift in Sources */,
 				410B19702BE32CE5003A1F87 /* SignupView.swift in Sources */,
 				410B196E2BE2FCCE003A1F87 /* LoginView.swift in Sources */,
-				41051AB32BE34EB900EF90A6 /* DataView.swift in Sources */,
+				417D292A2BE4A0B100482DB0 /* ChatView.swift in Sources */,
+				417D29202BE48EF900482DB0 /* AppointmentViewModel.swift in Sources */,
+				41051AB32BE34EB900EF90A6 /* AppointmentView.swift in Sources */,
 				41939E742BD0707D005D0EA4 /* ContentView.swift in Sources */,
 				410B19722BE338F7003A1F87 /* MainView.swift in Sources */,
+				417D29172BE4166100482DB0 /* AuthViewModel.swift in Sources */,
 				41939E722BD0707D005D0EA4 /* EMERAIApp.swift in Sources */,
+				417D29062BE40DC100482DB0 /* User.swift in Sources */,
+				417D29252BE49A7800482DB0 /* APIKey.swift in Sources */,
+				417D292C2BE4A0E300482DB0 /* ChatViewModel.swift in Sources */,
+				417D29042BE40AB500482DB0 /* SettingRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +769,73 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+		417D29212BE496EC00482DB0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		417D290A2BE414EC00482DB0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		417D290C2BE414EC00482DB0 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		417D290E2BE414EC00482DB0 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		417D29102BE414EC00482DB0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		417D29122BE414EC00482DB0 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		417D29192BE4245300482DB0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		417D291B2BE46A4900482DB0 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		417D291D2BE46A7700482DB0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29092BE414EC00482DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		417D29222BE496EC00482DB0 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 417D29212BE496EC00482DB0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41939E662BD0707D005D0EA4 /* Project object */;
 }

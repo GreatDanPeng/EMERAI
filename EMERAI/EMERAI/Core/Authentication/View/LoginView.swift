@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username = ""
+    @State private var email = ""
     @State private var password = ""
-    @State private var wrongUsername = 0
+    @State private var wrongEmail = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
-    @State private var isShowingMainView = false
+    @State private var isShowingContentView = false
+    @EnvironmentObject var viewModel: AuthViewModel
 
     var body: some View {
         NavigationView {
@@ -32,12 +33,12 @@ struct LoginView: View {
                         .font(.largeTitle)
                         .bold()
                         .padding()
-                    TextField("Username", text: $username)
+                    TextField("Email", text: $email)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        .border(.red, width: CGFloat(wrongUsername))
+                        .border(.red, width: CGFloat(wrongEmail))
                     SecureField("Password", text: $password)
                         .padding()
                         .frame(width: 300, height: 50)
@@ -45,8 +46,11 @@ struct LoginView: View {
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(wrongPassword))
                     Button("Login"){
-                        // Authenticate user
-                        autheticateUser(username: username, password: password)
+                        Task {
+                            try await viewModel.signIn(withEmail: email, password: password)
+                        }
+                         // Authenticate user
+                        autheticateUser(email: email, password: password)
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
@@ -54,7 +58,7 @@ struct LoginView: View {
                     .cornerRadius(10)
                     .padding(.bottom, 10)
                     
-                    .fullScreenCover(isPresented: $isShowingMainView, content: MainView.init)
+                    .fullScreenCover(isPresented: $isShowingContentView, content: ContentView.init)
                 
                     NavigationLink(destination: {
                         SignupView()
@@ -73,26 +77,37 @@ struct LoginView: View {
         }
         
     }
-    func autheticateUser(username: String, password: String) {
-        if username == "danpeng2024" {
-            wrongUsername = 0
+    
+    
+    func autheticateUser(email: String, password: String) {
+        if email == "dan.peng.1202@gmail.com" {
+            wrongEmail = 0
             if password == "abc123" {
                 wrongPassword = 0
-                isShowingMainView = true
+                isShowingContentView = true
             } else {
                 wrongPassword = 2
             }
         } else {
-            wrongUsername = 2
+            wrongEmail = 2
         }
     }
 }
 
 
-        
+extension LoginView: AuthenticationFromProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 5
+    }
+}
 
 
-#Preview {
-    LoginView()
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
 }
 

@@ -9,30 +9,32 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-        var body: some View {
-            TabView {
-                MainView()
-                    .tabItem {
-                        Label("Tips", systemImage: "lightbulb")
-                    }
+    var body: some View {
+                TabView {
+                    MainView()
+                        .tabItem {
+                            Label("Tips", systemImage: "lightbulb")
+                        }
 
-                AskView()
-                    .tabItem {
-                        Label("Ask", systemImage: "questionmark.circle")
-                    }
+                    AskView()
+                        .tabItem {
+                            Label("Ask", systemImage: "questionmark.circle")
+                        }
 
-                DataView()
-                    .tabItem {
-                        Label("Data", systemImage: "chart.bar")
-                    }
+                    AppointmentView()
+                        .tabItem {
+                            Label("Appointments", systemImage: "cross.case.fill")
+                        }
 
-                ProfileView() 
-                    .tabItem {
-                        Label("Profile", systemImage: "person.crop.circle")
-                    }
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person.crop.circle")
+                        }
+                }
             }
-        }
-    }
+}
+        
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
